@@ -15,7 +15,7 @@
 -- +------+----------+
 
 
-SELECT year, COUNT(*) as num_teams
+SELECT year, COUNT(name) --COUNT(*) is an aggregate function and the * states we don't care what the input is
 FROM teams
 GROUP BY year
 ORDER BY year
