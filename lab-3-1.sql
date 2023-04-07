@@ -15,3 +15,8 @@
 -- +------+----------+
 
 
+SELECT year, COUNT(*) as num_teams
+FROM teams
+GROUP BY year
+ORDER BY year
+;
