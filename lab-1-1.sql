@@ -13,4 +13,8 @@
 -- | 2020 | Washington Nationals              |
 -- +------+-----------------------------------+
 
+SELECT year, name --use .schema to see the structure of the data 
+FROM teams --each clause is in all CAPS
+; --if you get a ...> use a ; to end the error state
+
 
