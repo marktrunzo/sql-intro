@@ -3,9 +3,8 @@
 -- Expected result:
 -- 2935
 
-SELECT SUM(stats.hits) as lifetime_hits
-FROM players, stats
-WHERE players.id = stats.player_id
-AND players.first_name = 'Barry'
+SELECT SUM(stats.hits) as Total_Hits
+FROM stats INNER JOIN players ON players.id = stats.player_id
+WHERE players.first_name = 'Barry'
 AND players.last_name = 'Bonds'
 ;
